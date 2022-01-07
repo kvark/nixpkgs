@@ -5481,6 +5481,9 @@ with pkgs;
 
   fusuma = callPackage ../tools/inputmethods/fusuma {};
 
+  ffpuppet = python3Packages.callPackage ../development/python-modules/ffpuppet { };
+  lithium-reducer = python3Packages.callPackage ../development/python-modules/lithium-reducer { };
+
   fuzzfetch = python3Packages.callPackage ../applications/misc/fuzzfetch { };
 
   fdbPackages = dontRecurseIntoAttrs (callPackage ../servers/foundationdb {
@@ -5897,6 +5900,8 @@ with pkgs;
   gnokii = callPackage ../tools/misc/gnokii { };
 
   gnuapl = callPackage ../development/interpreters/gnu-apl { };
+
+  grizzly-framework = python3Packages.callPackage ../applications/misc/grizzly-framework { };
 
   dapl = callPackage ../development/interpreters/dzaima-apl {
     buildNativeImage = false;
