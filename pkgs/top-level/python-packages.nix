@@ -4578,6 +4578,8 @@ in {
     python3 = python;
   });
 
+  lithium-reducer = callPackage ../development/python-modules/lithium-reducer { };
+
   littleutils = callPackage ../development/python-modules/littleutils { };
 
   livelossplot = callPackage ../development/python-modules/livelossplot { };
